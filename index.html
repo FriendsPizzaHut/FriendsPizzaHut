@@ -37,16 +37,16 @@
                     },
                     colors: {
                         primary: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
+                            50: '#fef7f0',
+                            100: '#feeee0',
+                            200: '#fddcc1',
+                            300: '#fcc192',
+                            400: '#fb8f65',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
                         },
                         indigo: {
                             500: '#6366f1',
@@ -114,7 +114,7 @@
     <!-- Page Loader -->
     <div class="page-loader fixed inset-0 bg-white z-50 flex items-center justify-center">
         <div class="loader-content text-center">
-            <div class="pizza-loader text-6xl text-indigo-500 animate-spin mb-4">
+            <div class="pizza-loader text-6xl animate-spin mb-4" style="color: #FB8F65;">
                 <i class="fas fa-pizza-slice"></i>
             </div>
             <p class="font-opensans text-lg text-gray-600">Loading deliciousness...</p>
@@ -128,8 +128,8 @@
                 <!-- Logo -->
                 <a href="#home"
                     class="flex items-center gap-2 sm:gap-3 text-gray-800 font-bold text-lg sm:text-xl hover-scale">
-                    <div
-                        class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center p-1.5 sm:p-2 shadow-lg">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center p-1.5 sm:p-2 shadow-lg"
+                        style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                         <img src="assets/icons/icon.png" alt="Friends Pizza Hut Icon"
                             class="w-full h-full object-contain" />
                     </div>
@@ -140,16 +140,24 @@
                 <nav class="hidden lg:flex justify-self-center">
                     <ul class="flex items-center gap-4 xl:gap-8">
                         <li><a href="#home"
-                                class="font-opensans font-medium text-gray-700 hover:text-indigo-600 px-3 xl:px-4 py-2 rounded-xl hover:bg-gray-100 transition-all duration-200 text-sm xl:text-base">Home</a>
+                                class="font-opensans font-medium text-gray-700 px-3 xl:px-4 py-2 rounded-xl hover:bg-gray-100 transition-all duration-200 text-sm xl:text-base"
+                                style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                                onmouseout="this.style.color='#4a5568'">Home</a>
                         </li>
                         <li><a href="#features"
-                                class="font-opensans font-medium text-gray-700 hover:text-indigo-600 px-3 xl:px-4 py-2 rounded-xl hover:bg-gray-100 transition-all duration-200 text-sm xl:text-base">Features</a>
+                                class="font-opensans font-medium text-gray-700 px-3 xl:px-4 py-2 rounded-xl hover:bg-gray-100 transition-all duration-200 text-sm xl:text-base"
+                                style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                                onmouseout="this.style.color='#4a5568'">Features</a>
                         </li>
                         <li><a href="#app"
-                                class="font-opensans font-medium text-gray-700 hover:text-indigo-600 px-3 xl:px-4 py-2 rounded-xl hover:bg-gray-100 transition-all duration-200 text-sm xl:text-base">App</a>
+                                class="font-opensans font-medium text-gray-700 px-3 xl:px-4 py-2 rounded-xl hover:bg-gray-100 transition-all duration-200 text-sm xl:text-base"
+                                style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                                onmouseout="this.style.color='#4a5568'">App</a>
                         </li>
                         <li><a href="#contact"
-                                class="font-opensans font-medium text-gray-700 hover:text-indigo-600 px-3 xl:px-4 py-2 rounded-xl hover:bg-gray-100 transition-all duration-200 text-sm xl:text-base">Contact</a>
+                                class="font-opensans font-medium text-gray-700 px-3 xl:px-4 py-2 rounded-xl hover:bg-gray-100 transition-all duration-200 text-sm xl:text-base"
+                                style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                                onmouseout="this.style.color='#4a5568'">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -157,7 +165,10 @@
                 <!-- CTA Button - Desktop -->
                 <div class="hidden sm:flex justify-self-end">
                     <a href="#download"
-                        class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-opensans font-semibold px-4 lg:px-6 py-2 rounded-xl hover:from-indigo-600 hover:to-purple-600 transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl text-sm lg:text-base">
+                        class="text-white font-opensans font-semibold px-4 lg:px-6 py-2 rounded-xl transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl text-sm lg:text-base"
+                        style="background: linear-gradient(to right, #FB8F65, #e67e22);"
+                        onmouseover="this.style.background='linear-gradient(to right, #e67e22, #d35400)'"
+                        onmouseout="this.style.background='linear-gradient(to right, #FB8F65, #e67e22)'">
                         <i class="fas fa-download"></i>
                         <span class="hidden md:inline">Download App</span>
                         <span class="md:hidden">App</span>
@@ -176,22 +187,33 @@
                 <nav class="mb-4">
                     <ul class="space-y-2">
                         <li><a href="#home"
-                                class="block font-opensans font-medium text-gray-700 hover:text-indigo-600 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">Home</a>
+                                class="block font-opensans font-medium text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200"
+                                style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                                onmouseout="this.style.color='#4a5568'">Home</a>
                         </li>
                         <li><a href="#features"
-                                class="block font-opensans font-medium text-gray-700 hover:text-indigo-600 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">Features</a>
+                                class="block font-opensans font-medium text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200"
+                                style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                                onmouseout="this.style.color='#4a5568'">Features</a>
                         </li>
                         <li><a href="#app"
-                                class="block font-opensans font-medium text-gray-700 hover:text-indigo-600 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">App</a>
+                                class="block font-opensans font-medium text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200"
+                                style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                                onmouseout="this.style.color='#4a5568'">App</a>
                         </li>
                         <li><a href="#contact"
-                                class="block font-opensans font-medium text-gray-700 hover:text-indigo-600 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">Contact</a>
+                                class="block font-opensans font-medium text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200"
+                                style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                                onmouseout="this.style.color='#4a5568'">Contact</a>
                         </li>
                     </ul>
                 </nav>
                 <div>
                     <a href="#download"
-                        class="block bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-opensans font-semibold px-6 py-3 rounded-xl text-center hover:from-indigo-600 hover:to-purple-600 transition-all duration-200">
+                        class="block text-white font-opensans font-semibold px-6 py-3 rounded-xl text-center transition-all duration-200"
+                        style="background: linear-gradient(to right, #FB8F65, #e67e22);"
+                        onmouseover="this.style.background='linear-gradient(to right, #e67e22, #d35400)'"
+                        onmouseout="this.style.background='linear-gradient(to right, #FB8F65, #e67e22)'">
                         <i class="fas fa-download mr-2"></i>
                         Download App
                     </a>
@@ -208,21 +230,32 @@
     <div class="mobile-menu hidden mt-4 pt-4 border-t border-gray-200">
         <ul class="space-y-2">
             <li><a href="#home"
-                    class="block font-opensans font-medium text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200">Home</a>
+                    class="block font-opensans font-medium text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200"
+                    style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                    onmouseout="this.style.color='#4a5568'">Home</a>
             </li>
             <li><a href="#features"
-                    class="block font-opensans font-medium text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200">Features</a>
+                    class="block font-opensans font-medium text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200"
+                    style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                    onmouseout="this.style.color='#4a5568'">Features</a>
             </li>
             <li><a href="#app"
-                    class="block font-opensans font-medium text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200">App</a>
+                    class="block font-opensans font-medium text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200"
+                    style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                    onmouseout="this.style.color='#4a5568'">App</a>
             </li>
             <li><a href="#contact"
-                    class="block font-opensans font-medium text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200">Contact</a>
+                    class="block font-opensans font-medium text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all duration-200"
+                    style="color: #4a5568;" onmouseover="this.style.color='#FB8F65'"
+                    onmouseout="this.style.color='#4a5568'">Contact</a>
             </li>
         </ul>
         <div class="mt-4">
             <a href="#download"
-                class="block bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-opensans font-semibold px-6 py-3 rounded-xl text-center hover:from-indigo-600 hover:to-purple-600 transition-all duration-200">
+                class="block text-white font-opensans font-semibold px-6 py-3 rounded-xl text-center transition-all duration-200"
+                style="background: linear-gradient(to right, #FB8F65, #e67e22);"
+                onmouseover="this.style.background='linear-gradient(to right, #e67e22, #d35400)'"
+                onmouseout="this.style.background='linear-gradient(to right, #FB8F65, #e67e22)'">
                 <i class="fas fa-download mr-2"></i>
                 Download App
             </a>
@@ -249,8 +282,10 @@
                     </p>
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
                         <a href="#"
-                            class="group bg-white border-2 border-gray-300 hover:border-indigo-400 text-gray-700 hover:text-indigo-600 font-opensans font-semibold px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center gap-3 sm:gap-4 shadow-lg hover:shadow-xl w-full sm:w-auto sm:min-w-[200px] max-w-[280px]"
-                            data-platform="android">
+                            class="group bg-white border-2 border-gray-300 text-gray-700 font-opensans font-semibold px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center gap-3 sm:gap-4 shadow-lg hover:shadow-xl w-full sm:w-auto sm:min-w-[200px] max-w-[280px]"
+                            data-platform="android" style="border-color: #e2e8f0; color: #4a5568;"
+                            onmouseover="this.style.borderColor='#FB8F65'; this.style.color='#FB8F65';"
+                            onmouseout="this.style.borderColor='#e2e8f0'; this.style.color='#4a5568';">
                             <i
                                 class="fab fa-android text-2xl sm:text-3xl text-green-500 group-hover:scale-110 transition-transform duration-300"></i>
                             <div class="text-left">
@@ -295,8 +330,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
                     <div
                         class="text-center p-6 sm:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 hover:shadow-xl transition-all duration-300">
-                        <div
-                            class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-mobile-alt text-lg sm:text-xl lg:text-2xl text-white"></i>
                         </div>
                         <h3 class="font-opensans font-bold text-lg sm:text-xl text-gray-800 mb-3 sm:mb-4">Easy Ordering
@@ -309,8 +344,8 @@
 
                     <div
                         class="text-center p-6 sm:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 hover:shadow-xl transition-all duration-300">
-                        <div
-                            class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-shipping-fast text-lg sm:text-xl lg:text-2xl text-white"></i>
                         </div>
                         <h3 class="font-opensans font-bold text-lg sm:text-xl text-gray-800 mb-3 sm:mb-4">Lightning Fast
@@ -323,8 +358,8 @@
 
                     <div
                         class="text-center p-6 sm:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 hover:shadow-xl transition-all duration-300 md:col-span-2 xl:col-span-1">
-                        <div
-                            class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-shield-alt text-lg sm:text-xl lg:text-2xl text-white"></i>
                         </div>
                         <h3 class="font-opensans font-bold text-lg sm:text-xl text-gray-800 mb-3 sm:mb-4">Secure
@@ -333,6 +368,8 @@
                             Multiple payment options with bank-level security. Your transactions are always protected.
                         </p>
                     </div>
+                </div>
+            </div>
         </section>
 
         <!-- Contact Section -->
@@ -345,8 +382,8 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
                     <div class="text-center">
-                        <div
-                            class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-phone text-lg sm:text-2xl text-white"></i>
                         </div>
                         <h3 class="font-opensans font-bold text-base sm:text-lg text-gray-800 mb-2">Call Us</h3>
@@ -354,8 +391,8 @@
                     </div>
 
                     <div class="text-center">
-                        <div
-                            class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-envelope text-lg sm:text-2xl text-white"></i>
                         </div>
                         <h3 class="font-opensans font-bold text-base sm:text-lg text-gray-800 mb-2">Email Us</h3>
@@ -363,8 +400,8 @@
                     </div>
 
                     <div class="text-center sm:col-span-2 lg:col-span-1">
-                        <div
-                            class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-map-marker-alt text-lg sm:text-2xl text-white"></i>
                         </div>
                         <h3 class="font-opensans font-bold text-base sm:text-lg text-gray-800 mb-2">Visit Us</h3>
@@ -435,30 +472,30 @@
 
                 <div class="space-y-4 mb-8">
                     <div class="flex items-center gap-4">
-                        <div
-                            class="w-6 h-6 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full flex items-center justify-center"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-check text-white text-sm"></i>
                         </div>
                         <span class="font-opensans text-gray-700">Real-time order tracking with GPS</span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div
-                            class="w-6 h-6 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full flex items-center justify-center"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-check text-white text-sm"></i>
                         </div>
                         <span class="font-opensans text-gray-700">Personalized recommendations based on your
                             taste</span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div
-                            class="w-6 h-6 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full flex items-center justify-center"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-check text-white text-sm"></i>
                         </div>
                         <span class="font-opensans text-gray-700">One-tap reordering of your favorite meals</span>
                     </div>
                     <div class="flex items-center gap-4">
-                        <div
-                            class="w-6 h-6 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
+                        <div class="w-6 h-6 rounded-full flex items-center justify-center"
+                            style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                             <i class="fas fa-check text-white text-sm"></i>
                         </div>
                         <span class="font-opensans text-gray-700">Exclusive app-only deals and discounts</span>
@@ -467,7 +504,10 @@
 
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#"
-                        class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-opensans font-semibold px-8 py-3 rounded-xl hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 text-center">
+                        class="text-white font-opensans font-semibold px-8 py-3 rounded-xl transition-all duration-300 text-center"
+                        style="background: linear-gradient(to right, #FB8F65, #e67e22);"
+                        onmouseover="this.style.background='linear-gradient(to right, #e67e22, #d35400)'"
+                        onmouseout="this.style.background='linear-gradient(to right, #FB8F65, #e67e22)'">
                         Get Android App
                     </a>
                     <a href="#"
@@ -478,22 +518,22 @@
             </div>
 
             <div class="text-center">
-                <div class="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-3xl p-8">
+                <div class="rounded-3xl p-8" style="background: linear-gradient(135deg, #FEF0E8, #FADCC7);">
                     <h3 class="font-caprasimo text-2xl text-gray-800 mb-4">Friends Pizza Hut</h3>
                     <p class="font-opensans text-gray-600 mb-6">Welcome back, Food Lover!</p>
                     <p class="font-opensans text-lg text-gray-700 mb-8">What's on your mind today?</p>
 
                     <div class="grid grid-cols-3 gap-4">
                         <button class="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                            <i class="fas fa-utensils text-indigo-500 text-xl mb-2"></i>
+                            <i class="fas fa-utensils text-xl mb-2" style="color: #FB8F65;"></i>
                             <p class="font-opensans text-sm text-gray-700">Browse Menu</p>
                         </button>
                         <button class="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                            <i class="fas fa-bolt text-indigo-500 text-xl mb-2"></i>
+                            <i class="fas fa-bolt text-xl mb-2" style="color: #FB8F65;"></i>
                             <p class="font-opensans text-sm text-gray-700">Quick Order</p>
                         </button>
                         <button class="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
-                            <i class="fas fa-map-marker-alt text-indigo-500 text-xl mb-2"></i>
+                            <i class="fas fa-map-marker-alt text-xl mb-2" style="color: #FB8F65;"></i>
                             <p class="font-opensans text-sm text-gray-700">Track Order</p>
                         </button>
                     </div>
@@ -504,10 +544,10 @@
 </section>
 
 <!-- CTA Section -->
-<section class="py-20 bg-gradient-to-r from-indigo-600 to-purple-700">
+<section class="py-20" style="background: linear-gradient(to right, #FB8F65, #e67e22);">
     <div class="container mx-auto px-6 text-center">
         <h2 class="font-caprasimo text-4xl md:text-5xl text-white mb-6">Ready to Order?</h2>
-        <p class="font-opensans text-lg text-indigo-100 mb-8 max-w-3xl mx-auto">
+        <p class="font-opensans text-lg text-white opacity-90 mb-8 max-w-3xl mx-auto">
             Download the Friends Pizza Hut app now and get your first order with a special 20% discount. Don't wait,
             your delicious meal is just a few taps away!
         </p>
@@ -556,8 +596,8 @@
             <!-- Brand Section -->
             <div class="sm:col-span-2 lg:col-span-1">
                 <div class="flex items-center gap-3 mb-4 sm:mb-6">
-                    <div
-                        class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center p-1.5 sm:p-2">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center p-1.5 sm:p-2"
+                        style="background: linear-gradient(to right, #FB8F65, #e67e22);">
                         <img src="assets/icons/icon.png" alt="Friends Pizza Hut Icon"
                             class="w-full h-full object-contain" />
                     </div>
@@ -621,15 +661,22 @@
                     exclusive offers and updates.</p>
                 <div class="flex flex-col sm:flex-row gap-2 mb-4 sm:mb-6">
                     <input type="email" placeholder="Enter your email"
-                        class="flex-1 px-3 sm:px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 text-sm" />
-                    <button
-                        class="bg-gradient-to-r from-indigo-500 to-purple-500 px-3 sm:px-4 py-2 rounded-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-200 sm:w-auto">
+                        class="flex-1 px-3 sm:px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none text-sm"
+                        style="border-color: #4a5568;" onfocus="this.style.borderColor='#FB8F65'"
+                        onblur="this.style.borderColor='#4a5568'" />
+                    <button class="px-3 sm:px-4 py-2 rounded-lg transition-all duration-200 sm:w-auto"
+                        style="background: linear-gradient(to right, #FB8F65, #e67e22);"
+                        onmouseover="this.style.background='linear-gradient(to right, #e67e22, #d35400)'"
+                        onmouseout="this.style.background='linear-gradient(to right, #FB8F65, #e67e22)'">
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </div>
                 <div>
                     <a href="#"
-                        class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-opensans font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl hover:from-indigo-600 hover:to-purple-600 transition-all duration-200 inline-flex items-center gap-2 text-sm sm:text-base">
+                        class="text-white font-opensans font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl transition-all duration-200 inline-flex items-center gap-2 text-sm sm:text-base"
+                        style="background: linear-gradient(to right, #FB8F65, #e67e22);"
+                        onmouseover="this.style.background='linear-gradient(to right, #e67e22, #d35400)'"
+                        onmouseout="this.style.background='linear-gradient(to right, #FB8F65, #e67e22)'">
                         <i class="fab fa-android"></i>
                         Get it on Android
                     </a>
